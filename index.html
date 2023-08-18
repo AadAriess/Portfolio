@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar sticky-top navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand fs-4 fw-bold" href="#">AadAriess.</a>
         <button
@@ -30,24 +30,26 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Work</a>
+              <a class="nav-link" href="#work">Work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <section id="home" class="home container">
-      <div class="row d-flex align-items-center">
-        <div class="col-8">
+      <div
+        class="row d-flex align-items-center flex-md-row flex-column-reverse"
+      >
+        <div class="col-12 col-md-8">
           <h3 class="fw-semibold">Hi! I am</h3>
           <h1 class="fw-bold">Aad Aries Suntara</h1>
           <p>
@@ -56,90 +58,111 @@
           </p>
           <a class="btn button" href="images/me.png" download="">Resume</a>
         </div>
-        <div class="col-4">
+        <div
+          class="col-12 col-md-4 d-flex justify-content-md-end justify-content-center"
+        >
           <img src="images/me.png" alt="" />
         </div>
       </div>
-      <div class="arrow w-100 d-flex align-items-center flex-column mt-5">
-        <a class="text-decoration-none text-dark" href="#about">More Info</a>
+      <a
+        href="#about"
+        class="text-decoration-none arrow w-100 d-flex align-items-center flex-column mt-5"
+      >
+        <div class="text-dark">More Info</div>
         <img id="arrow" class="mt-2" src="images/arrow.svg" alt="" />
-      </div>
+      </a>
     </section>
     <section id="about" class="about container">
-      <p>
-        I want to share about myself and my expertise. Currently, I am studying
-        for Masters Degree and have been involved in the web world for 3 years
-        in Undergraduate courses. I have done assignments related to websites
-        and have training in the web field. I am proficient in programming
-        languages such as HTML, CSS, Javascript, PHP, Laravel and others.
+      <p class="about-text">
+        I am a Bachelor of Computer graduate with a concentration in programming
+        who has an interest in working in the programming field. Have knowledge
+        related to <b>HTML, CSS, Javascript, PHP, Laravel, Database</b>. In my
+        previous project I made a lot of simple programming from the given
+        coursework. I have also participated in training activities and project
+        experiences related to full-stack programming, especially Laravel, and
+        participated in database training activities conducted by Oracle
+        Academy. Besides that, I am also interested in the field of visual
+        design using
+        <b>Adobe Photoshop, Adobe Premiere Pro, and Adobe After Effects</b>. In
+        my projects I have made many designs such as banners, business card
+        designs, logo designs, invitation card designs and made video designs
+        such as cinematic videos. I am a person who has a high curiosity and has
+        the ambition that in the future I can master various other programming
+        languages and design fields such as android programming and animation
+        design.
       </p>
       <div class="about-exp">
         <div class="about-exp-item">
           <div class="about-exp-item-header">
             <div>
-              <h5>Software Engineer</h5>
-              <p>Coding Studio (2021-Now)</p>
+              <h5>Oracle Database Foundations Certified Junior Associate</h5>
+              <p>Oracle Academy (November 2020)</p>
             </div>
             <button class="btn button" onclick="toggleDetail(event)">
               More Info
             </button>
           </div>
           <p class="about-exp-item-detail">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, id!
-            Perspiciatis at corporis animi omnis, doloremque, nisi eius
-            consectetur dolore ipsam rem, adipisci quibusdam voluptas aliquam?
-            Accusamus in vero debitis?
+            Learn the techniques and tools to design, build and extract
+            information from a database and who possess basic mathematical,
+            logical, and analytical problem-solving skills as well as studying
+            database design techniques, design databases using a modeling tool,
+            and are introduced to SQL to implement and query databases using
+            hands-on
           </p>
         </div>
         <div class="about-exp-item">
           <div class="about-exp-item-header">
             <div>
-              <h5>Software Engineer</h5>
-              <p>Coding Studio (2021-Now)</p>
+              <h5>Adobe Certified Professional Video Design</h5>
+              <p>Certiport (May 2022)</p>
             </div>
             <button class="btn button" onclick="toggleDetail(event)">
               More Info
             </button>
           </div>
           <p class="about-exp-item-detail">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, id!
-            Perspiciatis at corporis animi omnis, doloremque, nisi eius
-            consectetur dolore ipsam rem, adipisci quibusdam voluptas aliquam?
-            Accusamus in vero debitis?
+            In the Video Design Pathway class learn digital skills Video Design
+            (Adobe Photoshop + Adobe Premiere Pro + Adobe After Effect) and do
+            the tasks given by the mentor. Among them in outline, namely making
+            pitch decks, digital painting / manipulation photos, content aware
+            and poster design, cutting, making time effects, banners, masking,
+            adjustment layers, tracking, 3D cameras, motion, motion graphics,
+            rotoscoping, logo reveal, writing on, trim paths, and create other
+            video effects.
           </p>
         </div>
         <div class="about-exp-item">
           <div class="about-exp-item-header">
             <div>
-              <h5>Software Engineer</h5>
-              <p>Coding Studio (2021-Now)</p>
+              <h5>Front-End Web Development</h5>
+              <p>Coding Studio (August 2023)</p>
             </div>
             <button class="btn button" onclick="toggleDetail(event)">
               More Info
             </button>
           </div>
           <p class="about-exp-item-detail">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, id!
-            Perspiciatis at corporis animi omnis, doloremque, nisi eius
-            consectetur dolore ipsam rem, adipisci quibusdam voluptas aliquam?
-            Accusamus in vero debitis?
+            Learn how to create a structure for a website before actually
+            starting development and then learn how to convert that structure to
+            the website.
           </p>
         </div>
       </div>
     </section>
     <section id="work" class="work container">
       <div class="row d-flex align-items-center gap-5">
-        <div class="col">
+        <div class="col-12 col-lg-5">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-            voluptatum doloremque, perferendis nostrum itaque aliquam architecto
-            adipisci laudantium. Fuga, quis nobis! Fugit non modi distinctio
-            earum aut laudantium quasi quas similique esse, hic assumenda velit
-            dolore obcaecati vel, maxime quis dolorem. Sed, corrupti. Nostrum
-            magnam maiores harum iste eveniet? Obcaecati!
+            I have experience in projects in college such as website
+            development, starting from native websites to using frameworks like
+            Laravel. In lectures, they also study design issues such as UI/UX
+            before working on a website. Outside of lectures, I also studied
+            visual and video design using Adobe applications. Here is the
+            project I worked on.
           </p>
         </div>
-        <div class="col work-img">
+        <div class="col-12 col-lg-6 work-img">
           <div id="work-1" class="work-img-item">
             <img src="images/work-1.png" alt="" />
           </div>
@@ -153,33 +176,26 @@
       </div>
     </section>
     <section id="contact" class="contact container">
-      <div class="row d-flex align-items-center">
-        <div class="col">
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus
-            beatae ipsam inventore suscipit. Quas architecto aliquid laboriosam
-            laudantium ducimus magnam accusantium consectetur eum nobis sed
-            aperiam, vero, dignissimos facilis praesentium assumenda, quod
-            minima eveniet ut fugiat unde quibusdam! Voluptas, dolore explicabo?
-            Delectus, eius laboriosam consequuntur repellat hic odio porro
-            error!
-          </p>
+      <div class="row d-flex align-items-center gap-5">
+        <div class="col-12 col-lg-6">
+          <h1 class="fw-bold">We Want to Hear From You</h1>
+          <p>Please fill out our form, and we'll get in touch shortly</p>
           <div class="row">
             <div class="col d-flex align-items-center">
-              <img src="images/Facebook.svg" alt="" />
-              <p>AadAriess</p>
+              <img class="w-25" src="images/Facebook.svg" alt="" />
+              <p class="mb-0 ms-2">AadAriess</p>
             </div>
             <div class="col d-flex align-items-center">
-              <img src="images/Instagram.svg" alt="" />
-              <p>@Aad_Ariess</p>
+              <img class="w-25" src="images/Instagram.svg" alt="" />
+              <p class="mb-0 ms-2">@Aad_Ariess</p>
             </div>
             <div class="col d-flex align-items-center">
-              <img src="images/Twitter.svg" alt="" />
-              <p>@Aad_Ariess</p>
+              <img class="w-25" src="images/Twitter.svg" alt="" />
+              <p class="mb-0 ms-2">@Aad_Ariess</p>
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-12 col-lg-5">
           <form class="contact-form" onsubmit="onFormSubmit(event)">
             <div class="mb-3">
               <label for="inp_email" class="form-label">Email address</label>
